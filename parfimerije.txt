@@ -1,0 +1,3 @@
+1,Perfume Shop Lux,Knez Mihailova,1
+2,Perfume Shop Example,Main Street,2
+3,Perfume Shop Sample,Central Street,3
