@@ -268,8 +268,7 @@ class Parfimerija:
 
 
 def sacuvaj_sve_u_fajl(fajl, podaci):
-    """Prepisuje ceo fajl na osnovu trenutne liste podataka (koristi se
-    posle brisanja, da izbrisana stavka fizicki nestane iz fajla)."""
+    
 
     linije = [",".join(stavka.redosled_za_tabelu()) for stavka in podaci]
 
@@ -281,9 +280,7 @@ def sacuvaj_sve_u_fajl(fajl, podaci):
 
 
 def posalji_na_stampu(tekst):
-    """Upisuje tekst u stampa.txt i pokusava da ga posalje na stampac.
-    Na Windows-u koristi os.startfile(..., 'print').
-    Na drugim sistemima samo upozorava da automatska stampa nije podrzana."""
+    
 
     with open("stampa.txt", "w", encoding="utf-8") as f:
         f.write(tekst)
@@ -299,9 +296,7 @@ def posalji_na_stampu(tekst):
         )
 
 
-# ==========================================================
-# GUI APLIKACIJA
-# ==========================================================
+
 
 class Aplikacija(tk.Tk):
 
