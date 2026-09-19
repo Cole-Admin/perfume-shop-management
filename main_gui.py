@@ -356,7 +356,7 @@ class Aplikacija(tk.Tk):
         notebook.add(self.tab_lica["frame"], text="Fizicka lica")
         notebook.add(self.tab_parf["frame"], text="Parfimerije")
 
-        # Ucitaj sve podatke na start
+        
         self._osvezi_tabelu(self.tab_lica)
         self._osvezi_tabelu(self.tab_parf)
 
@@ -372,7 +372,7 @@ class Aplikacija(tk.Tk):
     def _napravi_tab(self, notebook, naslov, podaci, kolone, naslovi, klasa, fajl):
         frame = ttk.Frame(notebook)
 
-        # --- Gornja traka: pretraga ---
+        
         gornja = ttk.Frame(frame)
         gornja.pack(fill="x", padx=10, pady=(10, 5))
 
@@ -419,7 +419,7 @@ class Aplikacija(tk.Tk):
 
         entry.bind("<Return>", lambda e: self._osvezi_tabelu(info))
 
-        # --- Tabela rezultata ---
+        
         srednja = ttk.Frame(frame)
         srednja.pack(fill="both", expand=True, padx=10, pady=5)
 
@@ -439,7 +439,7 @@ class Aplikacija(tk.Tk):
 
         info["tree"] = tree
 
-        # --- Donja traka: broj rezultata + dugme za stampu ---
+        
         donja = ttk.Frame(frame)
         donja.pack(fill="x", padx=10, pady=(5, 10))
 
